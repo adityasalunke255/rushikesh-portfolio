@@ -21,12 +21,12 @@ function toggleCaseCard(card) {
     card.classList.remove('is-expanded');
   } else {
     card.classList.add('is-expanded');
-    
     // Scroll into view if needed (with offset for nav)
     setTimeout(() => {
       const rect = card.getBoundingClientRect();
       if (rect.top < 80) {
-        const offset = card.offsetTop - 80;
+        const absoluteTop = rect.top + window.scrollY;
+        const offset = absoluteTop - 80;
         window.scrollTo({ top: offset, behavior: 'smooth' });
       }
     }, 100);
