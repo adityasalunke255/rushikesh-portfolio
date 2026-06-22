@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rushikesh Phalke — Social Media Strategist & Content Architect</title>
+  <meta name="description" content="Rushikesh Phalke runs Mumbai's biggest meme page, consults on political campaign strategy, and builds social media systems for brands like Chitale Bandhu, Tata Neu, Blinkit, and more. 1M+ followers managed.">
+  <meta name="author" content="Rushikesh Phalke">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rushikesh Phalke — Social Media Strategist">
+  <meta property="og:description" content="Turning timelines into talking points since 2018. 1M+ followers managed. Mumbai's biggest meme page. Brand & political campaign strategy.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║          CUSTOM CURSOR                     ║
+       ╚═══════════════════════════════════════════╝ -->
+  <div class="custom-cursor" id="customCursor">
+    <span class="cursor-text" id="cursorText"></span>
+  </div>
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║      01 — HERO (SPLIT LAYOUT)              ║
+       ╚═══════════════════════════════════════════╝ -->
+  <section class="hero-split" id="hero">
+    <!-- Left column: Photo -->
+    <div class="hero-split__image-col">
+      <img
+        class="hero-split__photo"
+        src="assets/images/hero-photo.png"
+        alt="Rushikesh Phalke portrait"
+        id="heroPhoto"
+      >
+    </div>
+    
+    <!-- Right column: Text -->
+    <div class="hero-split__text-col" id="heroTextCol">
+      <div class="hero-split__content">
+        <span class="hero-split__label caption stagger-item">SOCIAL MEDIA STRATEGIST</span>
+        <h1 class="hero-split__name display-xxl">
+          <span class="stagger-item hero-split__line"><span class="hero-split__inner">RUSHIKESH</span></span>
+          <span class="stagger-item hero-split__line"><span class="hero-split__inner">PHALKE</span></span>
+        </h1>
+        <p class="hero-split__tagline body-lg stagger-item">
+          I've been turning timelines into talking points since 2018.
+        </p>
+        <p class="hero-split__pages caption stagger-item">
+          LIT MEMES MUMBAI &middot; EVERYTHING MUMBAI
+        </p>
+        
+        <div class="hero-split__scroll-cue stagger-item">
+          <span class="caption-sm">SCROLL</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║      02 — STICKY PILL NAV                  ║
+       ╚═══════════════════════════════════════════╝ -->
+  <nav class="pill-nav" id="pillNav" aria-label="Section navigation">
+    <button class="pill-nav__btn" data-target="intro">Intro</button>
+    <button class="pill-nav__btn" data-target="numbers">Numbers</button>
+    <button class="pill-nav__btn" data-target="philosophy">Philosophy</button>
+    <button class="pill-nav__btn" data-target="pages">Pages I Run</button>
+    <button class="pill-nav__btn" data-target="campaigns">Campaigns</button>
+    <button class="pill-nav__btn" data-target="strategy">Strategy</button>
+    <button class="pill-nav__btn" data-target="press">Press</button>
+    <button class="pill-nav__btn" data-target="contact">Let's Talk</button>
+  </nav>
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║      03 — PROOF TICKER                     ║
+       ╚═══════════════════════════════════════════╝ -->
+  <section class="proof-ticker" id="intro" aria-label="Brand and press proof">
+    <div class="proof-ticker__track" id="tickerTrack1">
+      <!-- Duplicated for seamless loop -->
+      <div class="proof-ticker__item"><span class="proof-ticker__text">REDBULL</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">BLINKIT</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">TATA NEU</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">ADANI</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">PAYTM GOLD</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">ZEE5</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">DECATHLON</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">VIVAAN SOLAR</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">CHITALE BANDHU</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">INDRIVE</span></div>
+      <span class="proof-ticker__separator"></span>
+      <!-- Duplicate for seamless loop -->
+      <div class="proof-ticker__item"><span class="proof-ticker__text">REDBULL</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">BLINKIT</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">TATA NEU</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">ADANI</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">PAYTM GOLD</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">ZEE5</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">DECATHLON</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">VIVAAN SOLAR</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">CHITALE BANDHU</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text">INDRIVE</span></div>
+      <span class="proof-ticker__separator"></span>
+    </div>
+    <!-- Press row (reverse direction) -->
+    <div class="proof-ticker__track proof-ticker__track--reverse" id="tickerTrack2" style="margin-top: var(--space-sm);">
+      <div class="proof-ticker__item"><span class="proof-ticker__text" style="color: var(--accent);">MID-DAY</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text" style="color: var(--accent);">FORBES INDIA</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text" style="color: var(--accent);">LOKSATTA</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text" style="color: var(--accent);">MAHARASHTRA TIMES</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text" style="color: var(--accent);">TINDER</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text" style="color: var(--accent);">FLIPKART</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text" style="color: var(--accent);">ZOMATO</span></div>
+      <span class="proof-ticker__separator"></span>
+      <!-- Duplicate -->
+      <div class="proof-ticker__item"><span class="proof-ticker__text" style="color: var(--accent);">MID-DAY</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text" style="color: var(--accent);">FORBES INDIA</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text" style="color: var(--accent);">LOKSATTA</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text" style="color: var(--accent);">MAHARASHTRA TIMES</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text" style="color: var(--accent);">TINDER</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text" style="color: var(--accent);">FLIPKART</span></div>
+      <span class="proof-ticker__separator"></span>
+      <div class="proof-ticker__item"><span class="proof-ticker__text" style="color: var(--accent);">ZOMATO</span></div>
+      <span class="proof-ticker__separator"></span>
+    </div>
+  </section>
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║      04 — BENTO STAT GRID + PHILOSOPHY     ║
+       ╚═══════════════════════════════════════════╝ -->
+  <section class="section" id="numbers">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-header__number caption">04 — Numbers that matter</p>
+        <h2 class="section-header__title display-xl" id="philosophyTitle">THE SCOREBOARD</h2>
+      </div>
+
+      <div class="bento-grid" id="bentoGrid">
+        <!-- Card 1: 1M+ Followers -->
+        <div class="bento-card reveal reveal-delay-1" id="bentoFollowers">
+          <div class="bento-card__number display-stat">
+            <span class="counter" data-target="1000000" data-suffix="+">0</span>
+          </div>
+          <p class="bento-card__label">Combined followers across the pages I run and manage — Mumbai's biggest meme page among them.</p>
+        </div>
+
+        <!-- Card 2: 500K Database (wide) -->
+        <div class="bento-card bento-card--wide reveal reveal-delay-2" id="bentoDatabase">
+          <div class="bento-card__number display-stat">
+            <span class="counter" data-target="500000" data-suffix="+">0</span>
+          </div>
+          <p class="bento-card__label">Audience database built for targeted political outreach — not vanity followers, people who actually respond.</p>
+        </div>
+
+        <!-- Card 3: Philosophy Quote (wide, accent) -->
+        <div class="bento-card bento-card--wide bento-card--accent bento-card--quote reveal reveal-delay-3" id="bentoPhilosophy">
+          <div class="quote-mark">"</div>
+          <p class="pull-quote">The art of social media isn't just posting — it's orchestrating a social symphony of pixels, puns, and hashtags that makes people stop scrolling and start talking.</p>
+        </div>
+
+        <!-- Card 4: Since 2018 -->
+        <div class="bento-card reveal reveal-delay-4" id="bentoSince">
+          <div class="bento-card__number display-stat">
+            <span class="counter" data-target="2018" data-prefix="Since " data-no-animate="true">2018</span>
+          </div>
+          <p class="bento-card__label">Building owned media properties, running campaigns, and turning brands into conversations.</p>
+        </div>
+
+        <!-- Card 5: 3 MLA engagements -->
+        <div class="bento-card reveal reveal-delay-1" id="bentoMLA" style="margin-top: calc(-1 * var(--grid-gap));">
+          <div class="bento-card__number display-stat">
+            <span class="counter" data-target="3" data-suffix="">0</span>
+          </div>
+          <p class="bento-card__label">MLA-level political engagements. Content strategy, influencer outreach, audience databases.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║      PHILOSOPHY SECTION                    ║
+       ╚═══════════════════════════════════════════╝ -->
+  <section class="section" id="philosophy" style="padding-top: 0;">
+    <div class="container" style="position: relative;">
+      <div class="giant-word" style="top: -40px; left: -20px;">VISION</div>
+      <div class="section-header reveal">
+        <p class="section-header__number caption">— Philosophy</p>
+        <h2 class="section-header__title display-xl">HOW I THINK<br>ABOUT CONTENT</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); position: relative; z-index: 1;" class="philosophy-columns">
+        <div class="reveal reveal-delay-1">
+          <p class="body-lg" style="color: var(--text-primary); margin-bottom: var(--space-sm);">I don't just create content — I build media properties.</p>
+          <p class="body-md">When Coldplay landed in Mumbai, the meme was up in 4 minutes. That's not an accident — that's a content ops system. I think in cultural moments, not content calendars. Every post is a bet on what Mumbai will talk about tomorrow, and I've been placing those bets right since 2018.</p>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <p class="body-md">Turn a 40-minute podcast into the 8-second clip that actually gets watched. Transform a local dairy brand's 75-year heritage into an Instagram-native campaign that brings in a new generation. Take a politician's policy document and make it something people actually share.</p>
+          <p class="body-md" style="margin-top: var(--space-sm); color: var(--accent);">The common thread: I find the one thing worth saying, then say it where people are actually paying attention.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║      05 — PAGES I RUN                      ║
+       ╚═══════════════════════════════════════════╝ -->
+  <section class="section" id="pages">
+    <div class="container" style="position: relative;">
+      <div class="giant-word" style="top: -60px; right: -20px; text-align: right;">MEMES</div>
+
+      <div class="section-header reveal">
+        <p class="section-header__number caption">05 — Owned Media</p>
+        <h2 class="section-header__title display-xl">PAGES I RUN</h2>
+        <p class="section-header__subtitle body-md">These aren't side projects. They're owned media properties I built from zero, each with a distinct editorial voice and audience.</p>
+      </div>
+
+      <!-- Lit Memes Mumbai -->
+      <div class="pages-section__page reveal" style="display: flex; gap: var(--space-lg); align-items: center; margin-bottom: var(--space-xl);">
+        <div class="phone-mockup" data-cursor="play">
+          <div class="phone-mockup__notch"></div>
+          <div class="phone-mockup__screen">
+            <div class="phone-mockup__scroll-content">
+              <!-- Placeholder colored blocks representing real posts -->
+              <div style="width: 100%; height: 280px; background: linear-gradient(135deg, #E63946, #FF6B6B); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Bebas Neue'; font-size: 32px;">LIT MEMES</div>
+              <div style="width: 100%; height: 280px; background: linear-gradient(135deg, #1a1a2e, #16213e); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Bebas Neue'; font-size: 24px;">MOMENT MARKETING</div>
+              <div style="width: 100%; height: 280px; background: linear-gradient(135deg, #0f3460, #533483); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Bebas Neue'; font-size: 24px;">CULTURAL RELEVANCE</div>
+              <div style="width: 100%; height: 280px; background: linear-gradient(135deg, #e94560, #0f3460); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Bebas Neue'; font-size: 24px;">VIRAL CONTENT</div>
+              <div style="width: 100%; height: 280px; background: linear-gradient(135deg, #533483, #E63946); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Bebas Neue'; font-size: 24px;">MUMBAI PULSE</div>
+              <div style="width: 100%; height: 280px; background: linear-gradient(135deg, #E63946, #FF6B6B); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Bebas Neue'; font-size: 32px;">LIT MEMES</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pages-section__info">
+          <p class="caption pages-section__page-name">Lit Memes Mumbai</p>
+          <h3 class="heading-lg" style="margin-bottom: var(--space-sm);">Mumbai's Biggest Meme Page</h3>
+          <p class="body-md">I didn't just start a meme page — I designed a media property around a thesis: Mumbai's humor is hyper-local, timing-obsessed, and bilingual. Every piece of content is a deliberate bet on cultural relevance.</p>
+          <ul style="margin-top: var(--space-sm); display: flex; flex-direction: column; gap: 8px;">
+            <li class="body-sm" style="padding-left: 20px; position: relative;"><span style="position: absolute; left: 0; color: var(--accent);">→</span> Moment marketing: meme within minutes of a trending event</li>
+            <li class="body-sm" style="padding-left: 20px; position: relative;"><span style="position: absolute; left: 0; color: var(--accent);">→</span> Local-humor positioning no national page can replicate</li>
+            <li class="body-sm" style="padding-left: 20px; position: relative;"><span style="position: absolute; left: 0; color: var(--accent);">→</span> Marathi + English bilingual voice that resonates with Mumbai</li>
+            <li class="body-sm" style="padding-left: 20px; position: relative;"><span style="position: absolute; left: 0; color: var(--accent);">→</span> Brand collaborations with Tinder, Blinkit, Flipkart & more</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Everything Mumbai -->
+      <div class="pages-section__page pages-section__page--reverse reveal" style="display: flex; gap: var(--space-lg); align-items: center; flex-direction: row-reverse;">
+        <div class="phone-mockup" data-cursor="play">
+          <div class="phone-mockup__notch"></div>
+          <div class="phone-mockup__screen">
+            <div class="phone-mockup__scroll-content">
+              <div style="width: 100%; height: 280px; background: linear-gradient(135deg, #0082C3, #00B4D8); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Bebas Neue'; font-size: 28px;">EVERYTHING<br>MUMBAI</div>
+              <div style="width: 100%; height: 280px; background: linear-gradient(135deg, #023e8a, #0077b6); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Bebas Neue'; font-size: 24px;">CIVIC NEWS</div>
+              <div style="width: 100%; height: 280px; background: linear-gradient(135deg, #0096c7, #48cae4); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Bebas Neue'; font-size: 24px;">LOCAL STORIES</div>
+              <div style="width: 100%; height: 280px; background: linear-gradient(135deg, #023e8a, #0077b6); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Bebas Neue'; font-size: 24px;">CITY PULSE</div>
+              <div style="width: 100%; height: 280px; background: linear-gradient(135deg, #0096c7, #0082C3); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Bebas Neue'; font-size: 24px;">COMMUNITY</div>
+              <div style="width: 100%; height: 280px; background: linear-gradient(135deg, #0082C3, #00B4D8); display: flex; align-items: center; justify-content: center; color: #fff; font-family: 'Bebas Neue'; font-size: 28px;">EVERYTHING<br>MUMBAI</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pages-section__info" style="text-align: right;">
+          <p class="caption pages-section__page-name">Everything Mumbai</p>
+          <h3 class="heading-lg" style="margin-bottom: var(--space-sm);">The City's News & Culture Feed</h3>
+          <p class="body-md">The other side of my media range. Everything Mumbai is a civic-utility page — local news, city stories, community voices. Where Lit Memes is entertainment-first, this one is information-first. Both are editorially deliberate.</p>
+          <ul style="margin-top: var(--space-sm); display: flex; flex-direction: column; gap: 8px; align-items: flex-end;">
+            <li class="body-sm" style="padding-right: 20px; position: relative;"><span style="position: absolute; right: 0; color: var(--accent);">←</span> Civic + news utility angle</li>
+            <li class="body-sm" style="padding-right: 20px; position: relative;"><span style="position: absolute; right: 0; color: var(--accent);">←</span> Community-driven content</li>
+            <li class="body-sm" style="padding-right: 20px; position: relative;"><span style="position: absolute; right: 0; color: var(--accent);">←</span> Proves range: entertainment AND information</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- TMT Footnote -->
+      <p class="caption reveal" style="margin-top: var(--space-lg); text-align: center; color: var(--text-muted);">
+        Also ex-founder of <span style="color: var(--text-secondary);">TMT Insta Official</span> — entertainment media. Three pages, three voices, one strategic mind.
+      </p>
+    </div>
+  </section>
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║      06 — CASE STUDIES                     ║
+       ╚═══════════════════════════════════════════╝ -->
+  <section class="section" id="campaigns">
+    <div class="container" style="position: relative;">
+      <div class="giant-word" style="top: -60px; left: -20px;">WORK</div>
+
+      <div class="section-header reveal">
+        <p class="section-header__number caption">06 — Case Studies</p>
+        <h2 class="section-header__title display-xl">THE CAMPAIGNS</h2>
+        <p class="section-header__subtitle body-md">Not a logo wall. Real strategy. Real budgets. Real outcomes.</p>
+      </div>
+
+      <div class="case-studies__grid">
+
+        <!-- FLAGSHIP: Chitale Bandhu -->
+        <div class="case-card case-card--flagship reveal" data-brand="chitale" data-cursor="view" id="caseChitale">
+          <div class="case-card__preview" onclick="toggleCaseCard(this.parentElement)">
+            <div class="case-card__preview-left">
+              <span class="case-card__brand-tag caption-sm" style="color: var(--brand-chitale);">🏆 Flagship Case Study</span>
+              <h3 class="case-card__title heading-lg">Chitale Bandhu</h3>
+              <p class="case-card__hook body-md">Full-stack social media strategy for Maharashtra's most iconic dairy brand. From objectives to phased execution to measurable outcomes — on a defined budget.</p>
+            </div>
+            <div class="case-card__expand-icon">+</div>
+          </div>
+          <div class="case-card__body">
+            <div class="case-card__body-inner">
+              <div class="case-card__phases">
+                <div class="case-card__phase">
+                  <p class="case-card__phase-label caption" style="color: var(--brand-chitale);">Objectives</p>
+                  <ul class="case-card__phase-content">
+                    <li>Increase brand awareness among younger demographics</li>
+                    <li>Drive engagement on Instagram & Facebook</li>
+                    <li>Position Chitale Bandhu as modern while honoring heritage</li>
+                    <li>Build content library for sustained posting</li>
+                  </ul>
+                </div>
+                <div class="case-card__phase">
+                  <p class="case-card__phase-label caption" style="color: var(--brand-chitale);">Target Audience</p>
+                  <ul class="case-card__phase-content">
+                    <li>Tier 1 cities: Mumbai, Pune, Nashik</li>
+                    <li>Tier 2: Nagpur, Aurangabad, Kolhapur</li>
+                    <li>Age 18–35: new-gen Maharashtrians</li>
+                    <li>NRI diaspora with nostalgia-driven connection</li>
+                  </ul>
+                </div>
+                <div class="case-card__phase">
+                  <p class="case-card__phase-label caption" style="color: var(--brand-chitale);">Phase 1: Engagement Boost</p>
+                  <p class="caption-sm" style="margin-bottom: 8px; color: var(--text-muted);">Weeks 1–2</p>
+                  <ul class="case-card__phase-content">
+                    <li>Meme-format content linking heritage with pop culture</li>
+                    <li>Festive moment marketing (tied to Marathi calendar)</li>
+                    <li>Influencer seeding with food bloggers</li>
+                    <li>Community polls and interactive stories</li>
+                  </ul>
+                </div>
+                <div class="case-card__phase">
+                  <p class="case-card__phase-label caption" style="color: var(--brand-chitale);">Phase 2: Sustained Hype</p>
+                  <p class="caption-sm" style="margin-bottom: 8px; color: var(--text-muted);">Weeks 3–4</p>
+                  <ul class="case-card__phase-content">
+                    <li>User-generated content campaigns</li>
+                    <li>Behind-the-scenes factory content</li>
+                    <li>Cross-platform amplification</li>
+                    <li>Performance analysis and optimization</li>
+                  </ul>
+                </div>
+                <div class="case-card__phase">
+                  <p class="case-card__phase-label caption" style="color: var(--brand-chitale);">Budget</p>
+                  <ul class="case-card__phase-content">
+                    <li>Tier structure: ₹1.5L – ₹3L</li>
+                    <li>Content creation: 40%</li>
+                    <li>Paid promotion: 35%</li>
+                    <li>Influencer collaboration: 25%</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Diljit x Dabbawala -->
+        <div class="case-card reveal reveal-delay-1" data-brand="diljit" data-cursor="view" id="caseDiljit">
+          <div class="case-card__preview" onclick="toggleCaseCard(this.parentElement)">
+            <div class="case-card__preview-left">
+              <span class="case-card__brand-tag caption-sm">Influencer Marketing</span>
+              <h3 class="case-card__title heading-lg">Diljit Dosanjh × Mumbai Dabbawala</h3>
+              <p class="case-card__hook body-md">The cultural crossover that proved a meme page can drive real-world brand moments.</p>
+            </div>
+            <div class="case-card__expand-icon">+</div>
+          </div>
+          <div class="case-card__body">
+            <div class="case-card__body-inner">
+              <div style="padding: var(--space-md) 0;">
+                <p class="pull-quote" style="color: var(--accent); margin-bottom: var(--space-md);">"Marathi Thecha with Punjabi Tadka"</p>
+                <p class="body-md">When Diljit Dosanjh's Mumbai concert became the talk of the city, I spotted the cultural moment: Mumbai's dabbawala heritage meets Punjab's biggest star. The result was a content piece that crossed language barriers, got shared across fan communities, and proved that a meme page can create genuine cultural commentary — not just react to it.</p>
+                <p class="body-sm" style="margin-top: var(--space-sm); color: var(--text-muted);">Best-performing influencer-marketing content piece. Organic reach across multiple state audiences.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- InDrive -->
+        <div class="case-card reveal reveal-delay-2" data-brand="indrive" data-cursor="view" id="caseIndrive">
+          <div class="case-card__preview" onclick="toggleCaseCard(this.parentElement)">
+            <div class="case-card__preview-left">
+              <span class="case-card__brand-tag caption-sm">App Campaign</span>
+              <h3 class="case-card__title heading-lg">InDrive App</h3>
+              <p class="case-card__hook body-md">Influencer-led app install campaign targeting Mumbai's daily commuters with relatable, meme-native content.</p>
+            </div>
+            <div class="case-card__expand-icon">+</div>
+          </div>
+          <div class="case-card__body">
+            <div class="case-card__body-inner">
+              <div style="padding: var(--space-md) 0;">
+                <p class="body-md">Created a series of meme-format posts positioning InDrive as the commuter's secret weapon against surge pricing. Leveraged Mumbai's auto-rickshaw culture and local humor to drive app installs through organic shares rather than paid ads.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Moment Marketing Wall -->
+        <div class="reveal reveal-delay-3">
+          <div class="section-header" style="margin-top: var(--space-lg); margin-bottom: var(--space-md);">
+            <p class="caption" style="color: var(--accent);">⚡ Moment Marketing</p>
+            <h3 class="heading-lg">The 4-Minute Response Time</h3>
+            <p class="body-sm" style="margin-top: 4px;">Same skill, different brands. Fast cultural reaction, every time.</p>
+          </div>
+          <div class="moment-grid">
+            <div class="moment-grid__item duotone" data-cursor="view">
+              <div style="width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, #FE3C72, #FF6B9D); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px;">
+                <span style="font-family: 'Bebas Neue'; font-size: 28px; color: #fff;">TINDER</span>
+                <span style="font-size: 13px; color: rgba(255,255,255,0.8);">× Coldplay Billboard</span>
+              </div>
+              <div class="moment-grid__caption">
+                <p class="caption-sm">Tinder × Coldplay Mumbai</p>
+              </div>
+            </div>
+            <div class="moment-grid__item duotone" data-cursor="view">
+              <div style="width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, #F5C518, #FFD93D); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px;">
+                <span style="font-family: 'Bebas Neue'; font-size: 28px; color: #1a1a1a;">BLINKIT</span>
+                <span style="font-size: 13px; color: rgba(0,0,0,0.7);">× Zomato Banner</span>
+              </div>
+              <div class="moment-grid__caption">
+                <p class="caption-sm">Blinkit × Zomato Collab</p>
+              </div>
+            </div>
+            <div class="moment-grid__item duotone" data-cursor="view">
+              <div style="width: 100%; aspect-ratio: 1; background: linear-gradient(135deg, #2874F0, #5C9EFF); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px;">
+                <span style="font-family: 'Bebas Neue'; font-size: 28px; color: #fff;">FLIPKART</span>
+                <span style="font-size: 13px; color: rgba(255,255,255,0.8);">IPL Season Gag</span>
+              </div>
+              <div class="moment-grid__caption">
+                <p class="caption-sm">Flipkart IPL Moment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║      07 — POLITICAL STRATEGY               ║
+       ╚═══════════════════════════════════════════╝ -->
+  <section class="section" id="strategy" style="background: var(--bg-surface);">
+    <div class="container" style="position: relative;">
+      <div class="giant-word" style="top: -60px; right: -20px; text-align: right;">STRATEGY</div>
+
+      <div class="section-header reveal">
+        <p class="section-header__number caption">07 — Political & Influencer Strategy</p>
+        <h2 class="section-header__title display-xl">THE SERIOUS SIDE</h2>
+        <p class="section-header__subtitle body-md">Content strategy and influencer outreach for political offices. Different register, same strategic thinking.</p>
+      </div>
+
+      <div class="political-grid">
+        <div class="political-card reveal reveal-delay-1">
+          <h3 class="political-card__name heading-md">Nana Patole</h3>
+          <p class="political-card__role caption">MLA — Content Strategy</p>
+          <ul class="political-card__details">
+            <li>Full social media content strategy</li>
+            <li>Influencer outreach & coordination</li>
+            <li>Campaign-period rapid response content</li>
+          </ul>
+        </div>
+        <div class="political-card reveal reveal-delay-2">
+          <h3 class="political-card__name heading-md">Ashish Shelar</h3>
+          <p class="political-card__role caption">MLA — Social Media Management</p>
+          <ul class="political-card__details">
+            <li>Day-to-day social media management</li>
+            <li>Policy content made shareable</li>
+            <li>Twitter analytics & optimization</li>
+          </ul>
+        </div>
+        <div class="political-card reveal reveal-delay-3">
+          <h3 class="political-card__name heading-md">Rohit Pawar</h3>
+          <p class="political-card__role caption">MLA — Audience Database & Outreach</p>
+          <ul class="political-card__details">
+            <li>Built ~500,000 engaged audience database</li>
+            <li>Targeted political outreach campaigns</li>
+            <li>Content strategy for policy communication</li>
+          </ul>
+        </div>
+        <div class="political-card reveal reveal-delay-4">
+          <h3 class="political-card__name heading-md">Mauli Katake</h3>
+          <p class="political-card__role caption">Political Campaign Strategy</p>
+          <ul class="political-card__details">
+            <li>End-to-end campaign content</li>
+            <li>Influencer coordination</li>
+            <li>Ground-level social media operations</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Proof callout -->
+      <div class="political-proof reveal">
+        <p class="pull-quote">"Built a 500K-strong audience database for targeted political outreach — not vanity followers, people who actually respond."</p>
+        <p class="body-sm" style="margin-top: var(--space-sm); color: var(--text-muted);">This is rare, hard-to-fake experience for someone his age. Three MLA-level engagements. Real campaign operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║      08 — PRESS WALL                       ║
+       ╚═══════════════════════════════════════════╝ -->
+  <section class="section" id="press">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-header__number caption">08 — Press & Media</p>
+        <h2 class="section-header__title display-xl">IN THE NEWS</h2>
+        <p class="section-header__subtitle body-md">Third-party validation. Not self-description — evidence.</p>
+      </div>
+
+      <div class="press-grid">
+        <a href="#" target="_blank" rel="noopener" class="press-card reveal reveal-delay-1" data-cursor="open">
+          <p class="press-card__publication heading-sm">Mid-Day</p>
+          <p class="press-card__headline">Feature on Mumbai's emerging social media voices and their impact on local culture.</p>
+          <span class="press-card__link">Read article <span>↗</span></span>
+        </a>
+        <a href="#" target="_blank" rel="noopener" class="press-card reveal reveal-delay-2" data-cursor="open">
+          <p class="press-card__publication heading-sm">Forbes India</p>
+          <p class="press-card__headline">How young content creators are reshaping India's digital media landscape.</p>
+          <span class="press-card__link">Read article <span>↗</span></span>
+        </a>
+        <a href="#" target="_blank" rel="noopener" class="press-card reveal reveal-delay-3" data-cursor="open">
+          <p class="press-card__publication heading-sm">Loksatta</p>
+          <p class="press-card__headline">Marathi-language coverage of digital-native media entrepreneurship in Maharashtra.</p>
+          <span class="press-card__link">Read article <span>↗</span></span>
+        </a>
+        <a href="#" target="_blank" rel="noopener" class="press-card reveal reveal-delay-4" data-cursor="open">
+          <p class="press-card__publication heading-sm">Maharashtra Times</p>
+          <p class="press-card__headline">Profile: The strategist behind some of Mumbai's most-followed Instagram pages.</p>
+          <span class="press-card__link">Read article <span>↗</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║      09 — CONTACT / CTA                    ║
+       ╚═══════════════════════════════════════════╝ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="reveal">
+        <h2 class="display-xl" style="margin-bottom: var(--space-sm);">LET'S TALK</h2>
+        <p class="body-lg" style="max-width: 500px; margin: 0 auto;">Have a brand that needs a voice? A campaign that needs strategy?<br>I'm one message away.</p>
+      </div>
+
+      <div class="contact__grid reveal reveal-delay-1">
+        <a href="tel:+917039134699" class="contact__item">
+          <span class="contact__item-icon">📱</span>
+          <span>+91 70391 34699</span>
+        </a>
+        <a href="mailto:rushikeshphalke1999@gmail.com" class="contact__item">
+          <span class="contact__item-icon">📧</span>
+          <span>rushikeshphalke1999@gmail.com</span>
+        </a>
+        <a href="https://wa.me/917039134699?text=Hi%20Rushikesh%2C%20I%27d%20love%20to%20chat%20about%20a%20project." target="_blank" rel="noopener" class="contact__item" style="border-color: #25D366;">
+          <span class="contact__item-icon">💬</span>
+          <span>WhatsApp</span>
+        </a>
+        <span class="contact__item">
+          <span class="contact__item-icon">📍</span>
+          <span>Thane, Maharashtra</span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║      FOOTER                                ║
+       ╚═══════════════════════════════════════════╝ -->
+  <footer class="footer">
+    <p class="caption-sm">© 2026 Rushikesh Phalke. Built with intent.</p>
+  </footer>
+
+  <!-- ╔═══════════════════════════════════════════╗
+       ║      FLOATING WHATSAPP BUTTON              ║
+       ╚═══════════════════════════════════════════╝ -->
+  <a href="https://wa.me/917039134699?text=Hi%20Rushikesh!" target="_blank" rel="noopener" class="whatsapp-float" id="whatsappFloat" data-cursor="open" aria-label="Contact on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/cursor.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/case-studies.js"></script>
+  <script src="js/magnetic.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

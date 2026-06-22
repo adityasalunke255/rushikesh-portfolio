@@ -1,0 +1,213 @@
+/* ============================================
+   RESPONSIVE — Rushikesh Phalke Portfolio
+   ============================================ */
+
+/* ── WIDE (> 1400px) ── */
+@media (min-width: 1401px) {
+  /* Removed old hero rules */
+}
+
+/* ── TABLET (768px – 1024px) ── */
+@media (max-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bento-card--wide {
+    grid-column: span 2;
+  }
+
+  .moment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .press-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pages-section__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .case-card__phases {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── MOBILE (< 768px) ── */
+@media (max-width: 767px) {
+  :root {
+    --space-xl: 80px;
+    --space-xxl: 100px;
+  }
+
+  .container {
+    padding: 0 var(--space-sm);
+  }
+
+  /* ── Hero (Split Layout) ── */
+  .hero-split {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+  }
+
+  .hero-split__text-col {
+    order: -1; /* Text first */
+    height: auto;
+    padding: var(--space-xxl) var(--space-md) var(--space-lg);
+    align-items: center; /* Centers the inner content block */
+  }
+
+  .hero-split__content {
+    align-items: flex-start; /* Keep internal elements left-aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .hero-split__name {
+    text-align: left;
+  }
+
+  .hero-split__scroll-cue {
+    position: static;
+    margin-top: var(--space-md);
+    left: auto;
+  }
+
+  .hero-split__image-col {
+    max-height: 60vh;
+  }
+
+  /* ── Pill Nav ── */
+  .pill-nav {
+    left: var(--space-sm);
+    right: var(--space-sm);
+    transform: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .pill-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .pill-nav.is-visible {
+    top: var(--space-xs);
+  }
+
+  .pill-nav__btn {
+    scroll-snap-align: start;
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+
+  /* ── Bento Grid ── */
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-card--wide {
+    grid-column: span 1;
+  }
+
+  /* Stat numbers stay large on mobile — they're the hook */
+  .bento-card__number {
+    font-size: 48px !important;
+  }
+
+  /* ── Pages I Run ── */
+  .pages-section__page {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pages-section__page--reverse {
+    flex-direction: column;
+  }
+
+  .phone-mockup {
+    width: 240px;
+    height: 480px;
+  }
+
+  /* ── Case Studies ── */
+  .case-card__preview {
+    padding: var(--space-sm);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .case-card__body-inner {
+    padding: 0 var(--space-sm) var(--space-sm);
+  }
+
+  .case-card__phases {
+    grid-template-columns: 1fr;
+  }
+
+  /* ── Moment Grid ── */
+  .moment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ── Political ── */
+  .political-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ── Press ── */
+  .press-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ── Contact ── */
+  .contact__grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact__item {
+    justify-content: center;
+  }
+
+  /* ── Section spacing ── */
+  .section {
+    padding: var(--space-xl) 0;
+  }
+
+  /* ── Typography adjustments ── */
+  .giant-word {
+    font-size: clamp(80px, 22vw, 160px);
+  }
+
+  .pull-quote {
+    font-size: 22px;
+  }
+}
+
+/* ── SMALL MOBILE (< 380px) ── */
+@media (max-width: 379px) {
+  .phone-mockup {
+    width: 200px;
+    height: 400px;
+  }
+
+  .pill-nav__btn {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .bento-card {
+    padding: var(--space-sm);
+  }
+}
