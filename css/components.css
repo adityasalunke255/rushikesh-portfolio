@@ -812,6 +812,16 @@
 .reveal-delay-5 { transition-delay: 500ms; }
 
 /* ═══════════════════════════════════════════
+   PAGES I RUN
+   ═══════════════════════════════════════════ */
+.pages-section__info--reverse {
+  text-align: right;
+}
+.pages-section__info--reverse ul {
+  align-items: flex-end;
+}
+
+/* ═══════════════════════════════════════════
    FOOTER
    ═══════════════════════════════════════════ */
 .footer {

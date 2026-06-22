@@ -130,6 +130,14 @@
     text-align: center;
   }
 
+  .pages-section__info--reverse {
+    text-align: center;
+  }
+  
+  .pages-section__info--reverse ul {
+    align-items: center;
+  }
+
   .pages-section__page--reverse {
     flex-direction: column;
   }
