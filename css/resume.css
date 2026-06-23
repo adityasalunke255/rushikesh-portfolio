@@ -1,0 +1,268 @@
+/* =========================================================
+   RESUME CSS (Ultra-Clean 1-Column, Milk White, A4)
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+
+:root {
+  --text-dark: #111111;
+  --text-gray: #444444;
+  --text-light: #777777;
+  --accent: #a51c1c;
+  --bg-color: #FDFFF8; /* Milk white */
+  --border-color: #dddddd;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  background-color: #f0f0f0; 
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* ── Floating Download Button ── */
+.download-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: var(--text-dark);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+  z-index: 1000;
+}
+
+.download-btn:hover {
+  background-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(165, 28, 28, 0.25);
+}
+
+/* ── A4 Page Setup ── */
+.resume-page {
+  width: 210mm;
+  min-height: 297mm;
+  background: var(--bg-color);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  padding: 20mm 20mm;
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  body {
+    background-color: transparent;
+    padding: 0;
+  }
+  .download-btn {
+    display: none;
+  }
+  .resume-page {
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20mm 20mm;
+  }
+}
+
+/* ── Header ── */
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 11px;
+  color: var(--text-gray);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 0;
+}
+
+.contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ── Main Content ── */
+.section {
+  margin-bottom: 25px;
+}
+
+.section-title {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-dark);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+.summary {
+  font-size: 12px;
+  color: var(--text-gray);
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.highlight {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text-dark);
+}
+
+/* ── Experience Items ── */
+.job {
+  margin-bottom: 25px;
+  border-left: 2px solid var(--border-color);
+  padding-left: 20px;
+  margin-left: 5px;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.job-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.job-company {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.job-date {
+  font-size: 12px;
+  color: var(--text-light);
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+.job-desc {
+  font-size: 12px;
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.job-bullets {
+  list-style-type: none;
+  font-size: 11.5px;
+  color: var(--text-gray);
+  line-height: 1.7;
+}
+
+.job-bullets li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 8px;
+  text-align: justify;
+}
+
+.job-bullets li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* ── Grid for Competencies & Brands ── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  font-size: 11.5px;
+  color: var(--text-dark);
+}
+
+.skill-item::before {
+  content: "•";
+  color: var(--accent);
+  margin-right: 6px;
+}
+
+.brand-list {
+  font-size: 12px;
+  color: var(--text-gray);
+  line-height: 1.8;
+  border-left: 2px solid var(--accent);
+  padding-left: 20px;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+/* ── Sub Items (Case Studies) ── */
+.sub-item {
+  margin-bottom: 20px;
+  border-left: 2px solid var(--border-color);
+  padding-left: 20px;
+  margin-left: 5px;
+}
+.sub-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+.sub-desc {
+  font-size: 11.5px;
+  color: var(--text-gray);
+  margin-top: 4px;
+  text-align: justify;
+  line-height: 1.6;
+}
